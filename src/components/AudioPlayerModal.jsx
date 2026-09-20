@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Volume2, Play, Pause, RotateCcw, X, Download, Music, Radio } from 'lucide-react';
+import { voiceService } from '../services/voiceTranslationService';
 
 const TRACKS = [
   {
@@ -80,12 +81,14 @@ export function AudioPlayerModal({ isOpen, onClose }) {
       audioRef.current.pause();
       setIsPlaying(false);
     } else {
+      voiceService.stopSpeaking();
       audioRef.current.playbackRate = playbackRate;
       audioRef.current.play().then(() => setIsPlaying(true)).catch(e => console.log('Audio error:', e));
     }
   };
 
   const handleTrackSelect = (index) => {
+    voiceService.stopSpeaking();
     setCurrentTrackIndex(index);
     setProgress(0);
     if (audioRef.current) {

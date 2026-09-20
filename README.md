@@ -1,14 +1,17 @@
 # SARJOM (सरजोम) — AI-Powered Vernacular Pedagogy & Real-Time Translation Suite
 
 [![Smart India Hackathon 2026](https://img.shields.io/badge/SIH-2026%20Problem%20SIH26042-orange.svg)](https://sih.gov.in)
+[![Download Latest APK v3.2](https://img.shields.io/badge/Download%20Latest%20APK-v3.2%20(67%20MB)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/tejuas98/sarjom-app/releases/download/v3.2/SARJOM-v3.2-release.apk)
+[![Download Production APK v3.0](https://img.shields.io/badge/Download%20Production%20APK-v3.0%20(67%20MB)-4285F4?style=for-the-badge&logo=android&logoColor=white)](https://github.com/tejuas98/sarjom-app/releases/download/v3.0/SARJOM-v3.0-final.apk)
+[![Complete Technical Spec](https://img.shields.io/badge/Complete%20Technical%20Spec-Math,%20Physics,%20Acoustics%20&%20Evolution-purple?style=for-the-badge)](./SARJOM_COMPLETE_TECHNICAL_DOCUMENTATION.md)
 [![Live Demo on Vercel](https://img.shields.io/badge/Live%20Prototype-Deployed%20on%20Vercel-success?logo=vercel)](https://palash-setu.vercel.app)
 [![Government of Jharkhand](https://img.shields.io/badge/Client-Govt.%20of%20Jharkhand%20(DHTE)-green.svg)](https://jharkhand.gov.in)
 [![SIH Jury Pitch](https://img.shields.io/badge/SIH%20Jury%20Pitch-3--Min%20Pitch%20%26%20Q%26A%20Defense-orange.svg)](./DEPLOYMENT_AND_JURY_PITCH.md)
 [![Prototype Walkthrough](https://img.shields.io/badge/Prototype%20Walkthrough-Screenshots%20%26%20Analysis-purple.svg)](./PROTOTYPE_README.md)
 [![Test Suite Status](https://img.shields.io/badge/Automated%20Tests-12%2F12%20Passed%20(100%25)-brightgreen.svg)](./TEST_RESULTS_AND_BENCHMARKS.md)
-[![Latency Benchmark](https://img.shields.io/badge/Voice%20Latency-0.6%20ms%20avg%20(SLA%20%3C%203.0s)-success.svg)](./TEST_RESULTS_AND_BENCHMARKS.md)
-[![Hardware Budget](https://img.shields.io/badge/RAM%20Footprint-5.8%20MB%20heap%20(Budget%20%E2%89%A42GB)-blue.svg)](./TEST_RESULTS_AND_BENCHMARKS.md)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-tejuas98%2FPALASH--Setu-blue?logo=github)](https://github.com/tejuas98/PALASH-Setu)
+[![Latency Benchmark](https://img.shields.io/badge/Voice%20Latency-2.04ms%20avg%20(SLA%20%3C%203.0s)-success.svg)](./TEST_RESULTS_AND_BENCHMARKS.md)
+[![Hardware Budget](https://img.shields.io/badge/RAM%20Footprint-11.6%20MB%20heap%20(Budget%20%E2%89%A42GB)-blue.svg)](./TEST_RESULTS_AND_BENCHMARKS.md)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-tejuas98%2Fsarjom--backup-blue?logo=github)](https://github.com/tejuas98/sarjom-backup)
 [![Deep Math & Architecture Spec](https://img.shields.io/badge/Technical%20Spec-Mathematics%20%26%20Engineering%20Deep%20Dive-purple.svg)](./TECHNICAL_SPECIFICATION_AND_MATHEMATICS.md)
 [![Full Tech Stack & Logic Guide](https://img.shields.io/badge/Tech%20Stack%20%26%20Logic-Non--Tech%20Intuition%20to%20Matrix%20Math-teal.svg)](./TECH_STACK_AND_LOGIC_EXPLAINED.md)
 

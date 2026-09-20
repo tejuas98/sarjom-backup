@@ -22,7 +22,6 @@ import {
   MessageSquare,
   BookOpen,
   Layers,
-  Check,
   X,
   HelpCircle,
 } from 'lucide-react';
@@ -45,7 +44,7 @@ export function FlashcardDeck({ selectedLang, uiLang = 'hi' }) {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [customHindiInput, setCustomHindiInput] = useState('');
   const [customEnglishInput, setCustomEnglishInput] = useState('');
-  const [customCategory, setCustomCategory] = useState('classroom');
+  const [customCategory, _setCustomCategory] = useState('classroom');
   const [customTranslations, setCustomTranslations] = useState(null);
   const [isAutoTranslating, setIsAutoTranslating] = useState(false);
   const [isDictatingModal, setIsDictatingModal] = useState(false);
@@ -222,6 +221,7 @@ export function FlashcardDeck({ selectedLang, uiLang = 'hi' }) {
     }
 
     const tribalData = getCardTribalData(card);
+    voiceService.stopSpeaking();
     setPracticingCardId(card.id);
     toast.info(
       isEn
@@ -300,6 +300,7 @@ export function FlashcardDeck({ selectedLang, uiLang = 'hi' }) {
       setIsDictatingModal(false);
       return;
     }
+    voiceService.stopSpeaking();
     setIsDictatingModal(true);
     toast.info(isEn ? 'Listening... Speak your sentence or word' : 'सुन रहे हैं... अपना वाक्य या शब्द बोलें');
 
@@ -658,7 +659,7 @@ export function FlashcardDeck({ selectedLang, uiLang = 'hi' }) {
                 fontWeight: deckTab === 'all' ? 700 : 500,
               }}
             >
-              🌟 {isEn ? `All (${allCards.length})` : `सभी (${allCards.length})`}
+              {isEn ? `All (${allCards.length})` : `सभी (${allCards.length})`}
             </button>
 
             <button

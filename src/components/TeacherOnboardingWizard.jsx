@@ -24,9 +24,9 @@ export function TeacherOnboardingWizard({ isOpen, onClose, selectedLang, onSelec
   const langMeta = TRIBAL_LANGUAGES[selectedLang] || TRIBAL_LANGUAGES.santhali;
 
   const handleTestAudio = () => {
-    const greeting = selectedLang === 'santhali' ? 'ᱡᱚᱦᱟᱨ' : 'जोहार';
-    voiceService.speakText('जोहार', 'hi-IN');
-    toast.success(`ध्वनि परीक्षण सफल: "${greeting}" उच्चारित`);
+    const welcomePhrase = 'कक्षा में आपका स्वागत है।';
+    voiceService.speakText(welcomePhrase, 'hi-IN');
+    toast.success('ध्वनि परीक्षण: कक्षा स्वागत वाक्य उच्चारित');
   };
 
   const handleMicSim = () => {
@@ -186,8 +186,8 @@ export function TeacherOnboardingWizard({ isOpen, onClose, selectedLang, onSelec
               <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-slate-muted)' }}>
                 परीक्षण ध्वनि ({langMeta.name}):
               </div>
-              <div style={{ fontSize: '2rem', fontWeight: 800, margin: '8px 0', color: 'var(--color-slate)' }}>
-                {selectedLang === 'santhali' ? 'ᱡᱚᱦᱟᱨ' : 'जोहार'}
+              <div style={{ fontSize: '1.25rem', fontWeight: 800, margin: '8px 0', color: 'var(--color-slate)' }}>
+                कक्षा में आपका स्वागत है
               </div>
               <button
                 onClick={handleTestAudio}

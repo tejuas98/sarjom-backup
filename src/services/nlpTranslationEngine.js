@@ -427,7 +427,212 @@ export const ENGLISH_TO_HINDI_LEMMA_MAP = {
   'padho': 'पढ़ो',
   'khelo': 'खेलो',
   'dekho': 'देखो',
+  'baccho': 'बच्चों',
+  'bacho': 'बच्चों',
+  'bache': 'बच्चे',
+  'bachon': 'बच्चों',
+  'suno': 'सुनो',
+  'samjho': 'समझो',
+  'utho': 'उठो',
+  'chalo': 'चलो',
+  'aaj': 'आज',
+  'kal': 'कल',
+  'shabash': 'शाबाश',
+  'namaste': 'नमस्ते',
+  'johar': 'जोहार',
+  'kya': 'क्या',
+  'kaise': 'कैसे',
+  'kahan': 'कहाँ',
+  'kyun': 'क्यों',
+  'sahi': 'सही',
+  'theek': 'ठीक',
+  'thik': 'ठीक',
+  'accha': 'अच्छा',
+  'acha': 'अच्छा',
+  'didi': 'दीदी',
+  'sir': 'सर',
+  'baith': 'बैठ',
+  'baitho': 'बैठो',
+  'baith jao': 'बैठ जाओ',
+  'sit down': 'बैठ जाओ',
+  'stand up': 'खड़े हो जाओ',
+  'be quiet': 'चुप रहो',
+  'quiet': 'चुप',
+  'open book': 'किताब खोलो',
+  'open your book': 'किताब खोलो',
+  'open books': 'किताब खोलो',
+  'drink water': 'पानी पियो',
+  'eat food': 'खाना खाओ',
+  'khana khao': 'खाना खाओ',
+  'go play': 'खेलने चलो',
+  'go to play': 'खेलने चलो',
+  'khelne': 'खेलने',
+  'khelne chalo': 'खेलने चलो',
+  'ghar jao': 'घर जाओ',
+  'go home': 'घर जाओ',
+  'dhyan do': 'ध्यान दो',
+  'pay attention': 'ध्यान दो',
+  'listen': 'सुनो',
+  'read': 'पढ़ो',
+  'write': 'लिखो',
+  'come here': 'यहाँ आओ',
+  'yahan aao': 'यहाँ आओ',
+  'well done': 'शाबाश',
+  'good': 'अच्छा',
+  'very good': 'बहुत अच्छा',
+  'thank you': 'धन्यवाद',
+  'thanks': 'धन्यवाद',
+  // Romanized Hinglish Classroom & Conversational Vocab
+  'hamari': 'हमारी',
+  'hamara': 'हमारा',
+  'hamare': 'हमारे',
+  'hamaari': 'हमारी',
+  'hamaara': 'हमारा',
+  'humari': 'हमारी',
+  'humara': 'हमारा',
+  'humare': 'हमारे',
+  'hamar': 'हमर',
+  'hindi': 'हिंदी',
+  'ki': 'की',
+  'ka': 'का',
+  'ke': 'के',
+  'ko': 'को',
+  'se': 'से',
+  'me': 'में',
+  'mein': 'में',
+  'par': 'पर',
+  'pe': 'पर',
+  'tak': 'तक',
+  'kaksha': 'कक्षा',
+  'kakshya': 'कक्षा',
+  'kasha': 'कक्षा',
+  'class': 'कक्षा',
+  'classes': 'कक्षाएं',
+  'classroom': 'कक्षा',
+  'hai': 'है',
+  'haii': 'है',
+  'haiii': 'है',
+  'hain': 'हैं',
+  'he': 'है',
+  'hh': 'है',
+  'h': 'है',
+  'tha': 'था',
+  'thi': 'थी',
+  'the': 'थे',
+  'hoga': 'होगा',
+  'hogi': 'होगी',
+  'honge': 'होंगे',
+  'ganit': 'गणित',
+  'math': 'गणित',
+  'maths': 'गणित',
+  'english': 'अंग्रेज़ी',
+  'angrezi': 'अंग्रेज़ी',
+  'vigyan': 'विज्ञान',
+  'science': 'विज्ञान',
+  'adhyayan': 'अध्ययन',
+  'padhai': 'पढ़ाई',
+  'padhenge': 'पढ़ेंगे',
+  'padho': 'पढ़ो',
+  'shuru': 'शुरू',
+  'khatam': 'खत्म',
+  'start': 'शुरू',
+  'period': 'कक्षा',
+  'ghanti': 'घंटी',
+  'toh hamari': 'आज हमारी',
+  'to hamari': 'आज हमारी',
+  'toh humari': 'आज हमारी',
+  'to humari': 'आज हमारी',
+  'toh hamara': 'आज हमारा',
+  'to hamara': 'आज हमारा',
+  'toh hindi': 'आज हिंदी',
+  'to hindi': 'आज हिंदी',
+  'hindi ki kaksha': 'हिंदी की कक्षा',
+  'hindi ki class': 'हिंदी की कक्षा',
+  'hindi kaksha': 'हिंदी की कक्षा',
+  'hindi class': 'हिंदी की कक्षा',
 };
+
+/**
+ * Converts English, Hinglish, or mixed spoken voice input into standard Hindi keywords.
+ * Enables teachers to speak naturally in English, Hinglish, or Hindi, producing clean Hindi phrases
+ * that feed directly into the SARJOM tribal translation pipeline.
+ */
+export function convertHinglishEnglishToHindiKeywords(rawText) {
+  if (!rawText || typeof rawText !== 'string') return '';
+  let trimmed = rawText.trim();
+  if (!trimmed) return '';
+
+  // 1. High-frequency ASR Phonetic & Classroom Phrase Normalizations
+  const lower = trimmed.toLowerCase();
+  if (
+    /^(?:toh|to)\s+(?:hamari|humari|hamaari)\s+hindi(?:\s+(?:hh|hai|haii|haiii|h))?$/i.test(lower) ||
+    /^(?:toh|to)\s+hindi\s+(?:hh|hai|haii|haiii|h)$/i.test(lower) ||
+    /^(?:aaj|aj)\s+(?:hamari|humari|hamaari)\s+hindi\s+(?:ki\s+)?(?:kaksha|kakshya|class|classroom)(?:\s+(?:hai|haii|haiii|hh|h))?$/i.test(lower) ||
+    /^(?:aaj|aj)\s+(?:hamari|humari|hamaari)\s+hindi(?:\s+(?:hai|haii|haiii|hh|h))?$/i.test(lower) ||
+    /^(?:today\s+(?:is\s+)?(?:our\s+)?hindi\s+class)$/i.test(lower)
+  ) {
+    return 'आज हमारी हिंदी की कक्षा है';
+  }
+
+  if (
+    /^(?:hamari|humari|hamaari)\s+hindi\s+(?:ki\s+)?(?:kaksha|kakshya|class|classroom)(?:\s+(?:hai|haii|haiii|hh|h))?$/i.test(lower) ||
+    /^(?:our\s+hindi\s+class)$/i.test(lower)
+  ) {
+    return 'हमारी हिंदी की कक्षा है';
+  }
+
+  // If already pure Devanagari with zero Latin characters, return as is
+  const devaCharCount = (trimmed.match(/[\u0900-\u097F]/g) || []).length;
+  const latinCharCount = (trimmed.match(/[a-zA-Z]/g) || []).length;
+  if (latinCharCount === 0 && devaCharCount > 0) {
+    return trimmed;
+  }
+
+  // Pre-normalize repeated letters from speech hesitation / acoustic drag (e.g. 'haiii' -> 'hai', 'hh' -> 'hai')
+  trimmed = trimmed
+    .replace(/\bhaii+\b/gi, 'hai')
+    .replace(/\bhh+\b/gi, 'hai')
+    .replace(/\baa+j\b/gi, 'aaj');
+
+  // Tokenize words (ignoring punctuation)
+  const tokens = trimmed.toLowerCase().split(/[\s,.;:!?।॥]+/);
+  const convertedTokens = [];
+
+  for (let i = 0; i < tokens.length; i++) {
+    const word = tokens[i].trim();
+    if (!word) continue;
+
+    // Check trigrams
+    if (i + 2 < tokens.length) {
+      const trigram = `${word} ${tokens[i + 1].trim()} ${tokens[i + 2].trim()}`;
+      if (ENGLISH_TO_HINDI_LEMMA_MAP[trigram]) {
+        convertedTokens.push(ENGLISH_TO_HINDI_LEMMA_MAP[trigram]);
+        i += 2;
+        continue;
+      }
+    }
+
+    // Check bigrams (two-word phrases)
+    if (i + 1 < tokens.length) {
+      const nextWord = tokens[i + 1].trim();
+      const bigram = `${word} ${nextWord}`;
+      if (ENGLISH_TO_HINDI_LEMMA_MAP[bigram]) {
+        convertedTokens.push(ENGLISH_TO_HINDI_LEMMA_MAP[bigram]);
+        i++; // skip next token
+        continue;
+      }
+    }
+
+    // Single token lookup
+    if (ENGLISH_TO_HINDI_LEMMA_MAP[word]) {
+      convertedTokens.push(ENGLISH_TO_HINDI_LEMMA_MAP[word]);
+    } else {
+      convertedTokens.push(word);
+    }
+  }
+
+  return convertedTokens.join(' ').trim();
+}
 
 /**
  * Single Clause / Sentence Translation Worker
@@ -688,8 +893,8 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
     if (inputTokenCount <= 2) {
       for (const item of TRIBAL_LEXICON) {
         const hNormalized = normalizeHindi(item.hindi);
-        const hParts = (item.hindi || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
-        const eParts = (item.english || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+        const hParts = (item.hindi || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+        const eParts = (item.english || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
 
         const isExactMatch =
           hNormalized === normalized ||
@@ -815,8 +1020,8 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
     if (inputTokenCount <= 2) {
       for (const item of TRIBAL_LEXICON) {
         const hNormalized = normalizeHindi(item.hindi);
-        const hParts = (item.hindi || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
-        const eParts = (item.english || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+        const hParts = (item.hindi || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+        const eParts = (item.english || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
 
         const isExactMatch =
           hNormalized === normalized ||
@@ -1946,7 +2151,7 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
       'उठो': { ho: 'बिरिद पे', mundari: 'बिरिदपे', santhali: 'ᱵᱮᱨᱮᱫ ᱯᱮ', santhaliDeva: 'बेरेद पे', sadri: 'उठा', audio: 'Bered pe' },
       'उठाओ': { ho: 'उतूर पे', mundari: 'उतुरपे', santhali: 'ᱛᱩᱞ ᱯᱮ', santhaliDeva: 'तूल पे', sadri: 'उठावा', audio: 'Tul pe' },
       'लाओ': { ho: 'आगु पे', mundari: 'आगुपे', santhali: 'ᱟᱹᱜᱩᱭ ᱯᱮ', santhaliDeva: 'आगुय पे', sadri: 'लावा', audio: 'Aaguy pe' },
-      'दो': { ho: 'ओमा पे', mundari: 'ओमेपे', santhali: 'ᱮᱢ ᱯᱮ', santhaliDeva: 'एम पे', sadri: 'देवा', audio: 'Em pe' },
+      'दीजिए': { ho: 'ओमा पे', mundari: 'ओमेपे', santhali: 'ᱮᱢ ᱯᱮ', santhaliDeva: 'एम पे', sadri: 'देवा', audio: 'Em pe' },
       'लो': { ho: 'इदि पे', mundari: 'इदिपे', santhali: 'ᱤᱫᱤ ᱯᱮ', santhaliDeva: 'इदी पे', sadri: 'लेवा', audio: 'Idi pe' },
       'रखो': { ho: 'दोहो पे', mundari: 'दोहोपे', santhali: 'ᱫᱚᱦᱚᱭ ᱯᱮ', santhaliDeva: 'दोहोय पे', sadri: 'राखा', audio: 'Dohoy pe' },
       'करो': { ho: 'रिका पे', mundari: 'चिकयपे', santhali: 'ᱠᱟᱹᱢᱤ ᱯᱮ', santhaliDeva: 'कामी पे', sadri: 'करा', audio: 'Kami pe' },
@@ -2192,7 +2397,6 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
       'रहे': { ho: 'तायेनकेनाको', mundari: 'ताएनकेनाको', santhali: 'ᱛᱟᱦᱮᱸ ᱮᱱᱟ ᱠᱚ', santhaliDeva: 'ताहे एना को', sadri: 'रहलँय', audio: 'Tahe ena ko' },
       'आरामदायक': { ho: 'सुख', mundari: 'सुख', santhali: 'ᱡᱤᱨᱟᱹᱣᱟᱱ', santhaliDeva: 'जिरावान', sadri: 'आराम कर', audio: 'Jirawan' },
       'हमारे': { ho: 'अलेयाः', mundari: 'अलेयाः', santhali: 'ᱟᱞᱮ ᱨᱤᱱ', santhaliDeva: 'आले रिन', sadri: 'हमर', audio: 'Ale rin' },
-      'हमारा': { ho: 'अलेयाः', mundari: 'अलेयाः', santhali: 'ᱟᱞᱮᱭᱟᱜ', santhaliDeva: 'आलेयाग', sadri: 'हमर', audio: 'Aleyag' },
       'हमारी': { ho: 'अलेयाः', mundari: 'अलेयाः', santhali: 'ᱟᱞᱮᱭᱟᱜ', santhaliDeva: 'आलेयाग', sadri: 'हमर', audio: 'Aleyag' },
       'बिल्कुल': { ho: 'साच्चे गे', mundari: 'साच्चेगे', santhali: 'ᱥᱟᱹᱨᱤ ᱜᱮ', santhaliDeva: 'सारी गे', sadri: 'एकदम', audio: 'Sari ge' },
       'काल्पनिक': { ho: 'काल्पनिक', mundari: 'काल्पनिक', santhali: 'ᱩᱭᱦᱟᱹᱨ', santhaliDeva: 'उयहार', sadri: 'काल्पनिक', audio: 'Uyhar' },
@@ -2204,7 +2408,6 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
       'बुढ़िया': { ho: 'बूढ़ी एरा', mundari: 'बूढ़ी एरा', santhali: 'ᱵᱩᱰᱷᱤ ᱮᱨᱟ', santhaliDeva: 'बुढी एरा', sadri: 'बुढ़िया', audio: 'Budhi era' },
       'भविष्य': { ho: 'आयोंग', mundari: 'आयोंग', santhali: 'ᱫᱟᱨᱟᱭ', santhaliDeva: 'दाराय', sadri: 'आगूक बात', audio: 'Daray' },
       'झील': { ho: 'पुखुरी', mundari: 'पुखुरी', santhali: 'ᱯᱩᱠᱷᱨᱤ', santhaliDeva: 'पुखरी', sadri: 'झील', audio: 'Pukhri' },
-      'हाथ': { ho: 'ती', mundari: 'ती', santhali: 'ᱛᱤ', santhaliDeva: 'ती', sadri: 'हाथ', audio: 'Ti' },
       'उठाया': { ho: 'उतुड़ केदा', mundari: 'उतुड़केद-आ', santhali: 'ᱛᱩᱞ ᱠᱮᱫ-ᱟ', santhaliDeva: 'तूल केद-आ', sadri: 'उठालक', audio: 'Tul ked-a' },
       'उठाए': { ho: 'उतुड़ केदा', mundari: 'उतुड़केद-आ', santhali: 'ᱛᱩᱞ ᱠᱮᱫ-ᱟ', santhaliDeva: 'तूल केद-आ', sadri: 'उठालक', audio: 'Tul ked-a' },
       'उसमें': { ho: 'एना रे', mundari: 'एना रे', santhali: 'ᱚᱱᱟ ᱨᱮ', santhaliDeva: 'ओना रे', sadri: 'ओकर में', audio: 'Ona re' },
@@ -2308,8 +2511,8 @@ export function translateSingleClause(hindiText, targetLang = 'santhali') {
         for (const item of TRIBAL_LEXICON) {
           const hNorm = normalizeHindi(item.hindi);
           const hWords = hNorm.split(/\s+/);
-          const hParts = (item.hindi || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
-          const eParts = (item.english || '').split(/[\/\;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+          const hParts = (item.hindi || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
+          const eParts = (item.english || '').split(/[/;,]/).map((p) => normalizeHindi(p)).filter(Boolean);
 
           const isWordMatch =
             (hWords.length <= 2 && (hNorm === lookupToken || hNorm === lookupCleanToken || hNorm === token || hParts.includes(lookupToken) || hParts.includes(token))) ||
@@ -2420,7 +2623,7 @@ export function translateHindiToTribal(hindiText, targetLang = 'santhali') {
   // Multi-sentence decomposition for continuous speeches / essays
   // Matches Hindi danda (।), period (.), question mark (?), exclamation (!), or double newlines
   const sentences = trimmed
-    .split(/(?<=[।!?\.\n])\s+/)
+    .split(/(?<=[।!?.\n])\s+/)
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
 
@@ -2475,7 +2678,7 @@ export function translateContinuousLecture(lectureText, targetLang = 'santhali',
   }
 
   const rawSentences = lectureText
-    .split(/(?<=[।!?\.\n])\s+/)
+    .split(/(?<=[।!?.\n])\s+/)
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
 
@@ -2532,7 +2735,7 @@ export function translateContinuousLecture(lectureText, targetLang = 'santhali',
 /**
  * Returns suggested classroom prompts for teachers based on context
  */
-export function getContextualSuggestions(context = 'all') {
+export function getContextualSuggestions(_context = 'all') {
   return [
     { hindi: 'नमस्ते / जोहार', label: 'जोहार (Greeting)' },
     { hindi: 'तुम्हारा नाम क्या है?', label: 'नाम पूछें (Ask Name)' },
@@ -2589,7 +2792,7 @@ export function cleanPrimaryHindi(raw) {
 
   // 3. Remove any stray English characters/words if Devanagari exists
   if (/[\u0900-\u097F]/.test(s)) {
-    s = s.replace(/[a-zA-Z]/g, '').replace(/[\/\\|]/g, ' ').replace(/\s+/g, ' ').trim();
+    s = s.replace(/[a-zA-Z]/g, '').replace(/[\\/|]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
   return s || raw.trim();

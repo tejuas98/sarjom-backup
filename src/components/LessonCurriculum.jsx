@@ -4,7 +4,7 @@ import { TRIBAL_LANGUAGES } from '../data/tribalLexicon';
 import { voiceService } from '../services/voiceTranslationService';
 import { translateHindiToTribal } from '../services/nlpTranslationEngine';
 import { offlineStorage } from '../services/offlineStorage';
-import { BookOpen, Award, CheckCircle, Volume2, PlusCircle, Sparkles, UserPlus, ListChecks } from 'lucide-react';
+import { BookOpen, Award, CheckCircle, Volume2, Sparkles, ListChecks } from 'lucide-react';
 import { toast } from 'sonner';
 
 export function LessonCurriculum({ selectedLang }) {

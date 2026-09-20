@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Award, CheckCircle2, ChevronRight, ChevronLeft, Zap, ShieldCheck, Cpu, Globe, BookOpen, QrCode } from 'lucide-react';
+import { X, Award, ChevronRight, ChevronLeft, Zap, ShieldCheck, Globe, BookOpen, QrCode } from 'lucide-react';
 
 export function JuryEvaluationTourModal({ isOpen, onClose, onNavigateTab }) {
   const [currentSlide, setCurrentSlide] = useState(0);

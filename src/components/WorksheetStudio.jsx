@@ -62,7 +62,7 @@ export const GRADE_CURRICULUM = {
     nipunCode: 'FLN-L3.1',
     themeHindi: 'सामाजिक संवाद, व्याकरण व 1-10 मिश्रित अनुप्रयोग',
     themeEnglish: 'Social Dialogue, Sentence Flow & Applied Numeracy',
-    competencyHindi: 'संदर्भगत वाक्य रचना, सामाजिक शिष्टाचार (जोहार) एवं मिश्रित गणना',
+    competencyHindi: 'संदर्भगत वाक्य रचना, पर्यावरण समझ एवं मिश्रित गणना',
     competencyEnglish: 'Contextual sentence construction, social greetings, and mixed numeracy',
     matchingCategories: ['greetings', 'nature', 'family'],
     numberRange: [1, 10],
@@ -344,13 +344,13 @@ const GRADE_SENTENCE_QUESTIONS = {
       },
       {
         id: 'sq_g3_2',
-        hindiPrompt: 'सभी को आदर से जोहार कहो।',
-        englishPrompt: 'Say Johar respectfully to all.',
-        sentencePre: 'ᱡᱚᱛᱚ ᱦᱚᱲ ',
-        sentencePost: ' ᱢᱮᱛᱟᱠᱚ ᱢᱮ᱾',
-        correct: 'ᱡᱚᱦᱟᱨ',
-        phonetic: 'Johār',
-        options: ['ᱫᱩᱲᱩᱵ', 'ᱦᱤᱡᱩᱜ', 'ᱡᱚᱦᱟᱨ'], // Answer is C (index 2)
+        hindiPrompt: 'पेड़ हमें ताज़ी हवा और छाया देते हैं।',
+        englishPrompt: 'Trees give us fresh air and shade.',
+        sentencePre: 'ᱫᱟᱨᱮ ᱟᱵᱚ ᱥᱟᱯᱷᱟ ',
+        sentencePost: ' ᱟᱨ ᱩᱢᱩᱞ ᱮᱢᱟᱵᱚᱱᱟ᱾',
+        correct: 'ᱦᱚᱭ',
+        phonetic: 'Hoy',
+        options: ['ᱦᱚᱭ', 'ᱫᱟᱜ', 'ᱥᱤᱧᱡᱚ'], // Answer is A (index 0)
       },
       {
         id: 'sq_g3_3',
@@ -376,13 +376,13 @@ const GRADE_SENTENCE_QUESTIONS = {
       },
       {
         id: 'sq_g3_2',
-        hindiPrompt: 'सभी को आदर से जोहार कहो।',
-        englishPrompt: 'Say Johar respectfully to all.',
-        sentencePre: 'सबेन को ',
-        sentencePost: ' मेनेपे।',
-        correct: 'जोहार',
-        phonetic: 'Johār',
-        options: ['दूब', 'हिजु', 'जोहार'], // Answer is C (index 2)
+        hindiPrompt: 'पेड़ हमें ताज़ी हवा और छाया देते हैं।',
+        englishPrompt: 'Trees give us fresh air and shade.',
+        sentencePre: 'दारु आबुके सफा ',
+        sentencePost: ' आर उबुल ओमेया।',
+        correct: 'होयो',
+        phonetic: 'Hoyo',
+        options: ['होयो', 'दाः', 'सिंगी'], // Answer is A (index 0)
       },
       {
         id: 'sq_g3_3',
@@ -408,13 +408,13 @@ const GRADE_SENTENCE_QUESTIONS = {
       },
       {
         id: 'sq_g3_2',
-        hindiPrompt: 'सभी को आदर से जोहार कहो।',
-        englishPrompt: 'Say Johar respectfully to all.',
-        sentencePre: 'सोबेन को ',
-        sentencePost: ' मेताकोपे।',
-        correct: 'जोहार',
-        phonetic: 'Johār',
-        options: ['दुब', 'हिजु', 'जोहार'], // Answer is C (index 2)
+        hindiPrompt: 'पेड़ हमें ताज़ी हवा और छाया देते हैं।',
+        englishPrompt: 'Trees give us fresh air and shade.',
+        sentencePre: 'दारु आबुके सफा ',
+        sentencePost: ' आर उबुल ओमेया।',
+        correct: 'होयो',
+        phonetic: 'Hoyo',
+        options: ['होयो', 'दाः', 'सिंगी'], // Answer is A (index 0)
       },
       {
         id: 'sq_g3_3',
@@ -440,13 +440,13 @@ const GRADE_SENTENCE_QUESTIONS = {
       },
       {
         id: 'sq_g3_2',
-        hindiPrompt: 'सभी को आदर से जोहार कहो।',
-        englishPrompt: 'Say Johar respectfully to all.',
-        sentencePre: 'सबे के आदर से ',
-        sentencePost: ' कहा।',
-        correct: 'जोहार',
-        phonetic: 'Johar',
-        options: ['बैठा', 'आवा', 'जोहार'], // Answer is C (index 2)
+        hindiPrompt: 'पेड़ हमें ताज़ी हवा और छाया देते हैं।',
+        englishPrompt: 'Trees give us fresh air and shade.',
+        sentencePre: 'गाछ-बिरिछ हमके शुद्ध ',
+        sentencePost: ' आउर छाहिं देवेला।',
+        correct: 'हवा',
+        phonetic: 'Hawa',
+        options: ['हवा', 'पानी', 'सुरुज'], // Answer is A (index 0)
       },
       {
         id: 'sq_g3_3',

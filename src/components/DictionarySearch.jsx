@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { TRIBAL_LEXICON, TRIBAL_LANGUAGES } from '../data/tribalLexicon';
+import { TRIBAL_LEXICON } from '../data/tribalLexicon';
 import { BENCHMARK_CASES } from '../data/benchmarkCases';
 import { UI_TRANSLATIONS } from '../data/uiTranslations';
 import { translateHindiToTribal, cleanPrimaryHindi } from '../services/nlpTranslationEngine';

@@ -45,7 +45,7 @@ This document is the **definitive, all-in-one technical manual, pedagogical mast
 15. [Multi-Dimensional Societal & Pedagogical Impact Audit](#15-multi-dimensional-societal--pedagogical-impact-audit)
 16. [Classroom Button-by-Button Operating Guide & Screen Reference](#16-classroom-button-by-button-operating-guide--screen-reference)
 17. [Grand Finale Jury Defense & 3-Minute High-Impact Pitch Script](#17-grand-finale-jury-defense--3-minute-high-impact-pitch-script)
-18. [Exhaustive Academic Literature & Statutory Bibliography](#18-exhaustive-academic-literature--statutory-bibliography)
+18. [Expanded Research & Hyperlinked Bibliography (54 Citations)](#18-expanded-research--hyperlinked-bibliography-54-citations)
 19. [Authors & License](#19-authors--license)
 
 ---
@@ -739,7 +739,7 @@ Audio QR worksheets bridge village households with formal school pedagogy, allow
 
 ---
 
-## 18. Exhaustive Academic Literature & Statutory Bibliography
+## 18. Expanded Research & Hyperlinked Bibliography (54 Citations)
 
 ### 18.1 Foundational Multilingual Education (MTB-MLE), Cognitive Development & Psycholinguistics
 1. **Cummins, James (1979).** *Linguistic Interdependence and the Educational Development of Bilingual Children.* Review of Educational Research, 49(2), 222–251. [DOI: 10.3102/00346543049002222](https://doi.org/10.3102/00346543049002222)

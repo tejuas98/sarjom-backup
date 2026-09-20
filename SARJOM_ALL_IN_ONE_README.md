@@ -175,6 +175,57 @@ Aligned with the Language Learning Foundation (LLF) and Jharkhand Education Proj
 - **Grade 3 (Class 3)**: 40% instruction in the mother tongue, 60% standard Hindi curriculum.
 - **Grade 4–5**: Full transition to Standard Hindi, with the tribal language preserved for cultural dialogue and literature.
 
+### 4.3 Grade-Specific (Grades 1, 2, 3) & Subject-Segregated Pedagogical Delivery Engine
+
+To operationalize the NIPUN Bharat Foundational Literacy and Numeracy (FLN) framework, SARJOM features an integrated **Grade Opt-In and Subject Segregation Engine**. Teachers non-proficient in tribal languages can immediately opt into the specific primary grade level (Grade 1, Grade 2, or Grade 3) and subject stream, dynamically generating classroom materials calibrated to the cognitive, lexical, and conceptual development of tribal learners.
+
+#### 1. Teacher Grade Opt-In Architecture (Grades 1, 2, and 3)
+Upon launching the application, the educator selects the target grade level. The system instantly recalibrates vocabulary complexity, audio speech rate, cognitive scaffolding, and the mother-tongue-to-Hindi distribution ratio:
+
+- **Grade 1 (Foundational Emergence & Oral Phonemic Immersion)**:
+  - *Linguistic Distribution*: 80% Tribal Mother Tongue (Ho / Mundari / Santhali), 20% Oral Hindi Scaffolding.
+  - *Cognitive Focus*: Oral comprehension, phoneme-grapheme association, script character tracing, tactile letter recognition (Ol Chiki, Warang Chiti, Devanagari), and high-frequency village concrete nouns.
+  - *Pedagogical Mode*: Auditory-first immersion to eliminate classroom communicative anxiety and build school attachment.
+
+- **Grade 2 (Bilingual Bridge & Conceptual Literacy)**:
+  - *Linguistic Distribution*: 60% Tribal Mother Tongue, 40% Structured Hindi Literacy.
+  - *Cognitive Focus*: Compound vocabulary, two-word syntax construction, sentence-level listening, simple word-picture pairing, and early bilingual reading fluency.
+  - *Pedagogical Mode*: Dual-language comparative prompts where tribal concept anchors introduce formal Hindi terminology.
+
+- **Grade 3 (Consolidation & Academic Transference)**:
+  - *Linguistic Distribution*: 40% Tribal Mother Tongue, 60% Standard Hindi Curriculum.
+  - *Cognitive Focus*: Connected paragraph reading, short story comprehension, abstract conceptual arithmetic, and written bilingual expression.
+  - *Pedagogical Mode*: Cummins Linguistic Interdependence model in practice—deep foundational literacy established in the mother tongue is smoothly transferred into formal textbook Hindi.
+
+#### 2. Three-Tier Subject Segregation Framework
+Materials are strictly segregated across the three foundational primary subjects prescribed by the National Curriculum Framework for Foundational Stage (NCF-FS) and JCERT:
+
+1. **Foundational Literacy & Language (भाषा एवं बुनियादी साक्षरता - Bhasha)**:
+   - Covers oral vocabulary, alphabet recognition, phonemic awareness, bilingual sight words, folklore rhymes, and dialogue scripts.
+   - Bridges indigenous oral traditions with formal script literacy (Ol Chiki for Santhali, Warang Chiti for Ho, Devanagari for Mundari/Sadri).
+
+2. **Foundational Numeracy & Mathematics (बुनियादी संख्यात्मकता एवं गणित - Ganit)**:
+   - Bridges indigenous numerical systems (such as the traditional Austroasiatic vigesimal / base-20 counting systems, e.g., *Isi* in Ho/Santhali) with formal decimal Arabic numerals.
+   - Contextualizes mathematical operations using familiar rural objects (sal seeds, tamarind pods, market day trade, cattle counting).
+
+3. **Environmental Studies & Local Ecology (पर्यावरण अध्ययन एवं प्रकृति-संस्कृति - Prakriti / EVS)**:
+   - Centers foundational science around local tribal biodiversity, sacred grove ecosystems (Jaherthan, Sarna Sthal), seasonal harvest cycles (Sarhul, Sohrai, Mage Porob), hygiene, and community living.
+   - Eliminates urban curriculum bias by utilizing indigenous botanical and animal terminology natively understood by rural children.
+
+#### 3. Grade-by-Subject Pedagogical Output Matrix
+
+| Grade Level | Subject Stream | Generated Worksheets (Printable A4 with Audio QR) | Generated Flashcards (Interactive 3D Touch Decks) | NIPUN Bharat Competency Addressed |
+| :--- | :--- | :--- | :--- | :--- |
+| **Grade 1** | **Language (Bhasha)** | Large-font glyph tracing (Ol Chiki / Warang Chiti / Devanagari), single-word matching with vivid line art, initial-sound identification. | High-contrast visual flashcards of concrete nouns (family, body parts, domestic animals) with native audio pronunciation. | L1.1: Identifies 15–20 letters and pronounces corresponding sounds. |
+| **Grade 1** | **Numeracy (Ganit)** | Object-counting sheets (1–10) featuring sal leaves and forest fruits; trace and match numerals with tribal number words. | Visual number cards displaying quantity dots, vernacular number names (*Moyd*, *Baria*, *Peya*), and standard digits. | N1.2: Counts up to 20 objects accurately using physical representations. |
+| **Grade 1** | **EVS (Prakriti)** | Color-and-identify local forest trees (Sal, Mahua, Palash), village animals, and seasonal fruits. | Picture cards of village environment with native audio animal calls and cultural names. | E1.1: Expresses awareness of immediate biological and familial surroundings. |
+| **Grade 2** | **Language (Bhasha)** | Two-word phrase tracing, fill-in-the-vowel exercises, bilingual word-to-picture crosswords, basic sight-word pairing. | Categorized cards (actions, colors, kitchen implements) with dual script display and contextual usage sentences. | L2.3: Reads simple two- to three-word sentences with comprehension. |
+| **Grade 2** | **Numeracy (Ganit)** | 2-digit number sequencing (1–50), basic visual addition/subtraction sheets framed as village haat (weekly market) exchanges. | Math fact flashcards with dual-language word problems (*"Three goats in the shed, two in the field..."*). | N2.4: Performs single-digit addition and subtraction with word-problem context. |
+| **Grade 2** | **EVS (Prakriti)** | Community helpers activity sheets (blacksmith, potter, farmer, weaver), water-body conservation and health habits. | Visual ecosystem cards showing tribal festivals, sacred grove trees, and weather patterns. | E2.2: Describes relationships between seasons, village crafts, and local flora. |
+| **Grade 3** | **Language (Bhasha)** | Short bilingual story comprehension passages (3–4 sentences) with multiple-choice questions and sentence reconstruction. | Story prompt flashcards with sequential illustrations and cultural folklore narratives in both scripts. | L3.1: Reads grade-appropriate unfamiliar texts at 45–60 words per minute. |
+| **Grade 3** | **Numeracy (Ganit)** | 3-digit operations, standard measurement exercises (local volume units to liters, cubits to meters), and simple division. | Mental arithmetic flashcards showing base-20 tribal mental math strategies mapped to standard decimal steps. | N3.3: Solves multi-step arithmetic problems and everyday monetary calculations. |
+| **Grade 3** | **EVS (Prakriti)** | Local ecology worksheets, community governance (Gram Sabha, Manki-Munda system), forest conservation mapping. | Multi-tier cards exploring water cycles, biodiversity food chains, and indigenous medicinal plants. | E3.4: Demonstrates analytical understanding of community stewardship and natural resources. |
+
 ---
 
 ## 5. End-to-End System Architecture: 3-Tier & 3-Stage IPO Pipeline
@@ -682,10 +733,23 @@ Audio QR worksheets bridge village households with formal school pedagogy, allow
 - **Clear Dialogue Button**: Resets the current session transcript buffer.
 
 ### 16.4 Module 2: Worksheet Studio Controls
-- **Grade Selector (Balvatika, Class 1, Class 2, Class 3)**: Filters NIPUN curriculum competencies.
-- **Exercise Mode Selector**: Toggles between Word-Picture Matching, Fill-in-the-Blanks, and Letter Tracing.
-- **Print / PDF Export Button**: Invokes browser print formatting pre-configured for standard A4 landscape/portrait paper.
-- **Dynamic QR Code Density Switch**: Optimizes QR matrix error-correction levels (Level M Reed-Solomon) for low-resolution smartphone cameras.
+- **Grade Opt-In Selector (Grade 1, Grade 2, Grade 3)**: Instantly filters learning competencies, font sizing, and language scaffolding ratios (80:20, 60:40, 40:60) aligned with NIPUN Bharat.
+- **Subject Segregation Bar**: One-tap toggling across three foundational disciplines:
+  - *Bhasha (Language & Literacy)*: Script tracing (Ol Chiki / Warang Chiti), phoneme matching, and story comprehension passages.
+  - *Ganit (Numeracy & Math)*: Vigesimal-to-decimal numeral tracing, rural object counting, and contextual word problems.
+  - *Prakriti / EVS (Environmental Studies)*: Village ecology, sacred grove flora/fauna, community seasons, and health practices.
+- **Exercise Mode Selector**: Toggles between Word-Picture Matching, Fill-in-the-Blanks, Object Counting, and Script Letter Tracing.
+- **Print / PDF Export Button**: Generates vector-sharp A4 print layouts pre-calibrated for single-page physical distribution.
+- **Dynamic Audio QR Generator**: Embeds high-density Reed-Solomon Level M QR codes linking every exercise to offline native voice recordings for home learning.
+
+### 16.5 Module 3: Visual Flashcards Studio Controls
+- **Grade Opt-In Switch (Class 1, Class 2, Class 3)**: Scales card complexity from single-object concrete flashcards (Grade 1) to dual-word relational concepts (Grade 2) and complex thematic storylines (Grade 3).
+- **Subject Segregation Filter**:
+  - *Language Decks*: Alphabet cards, high-frequency sight words, and action verbs with dual script and audio pronunciation.
+  - *Math Decks*: Visual quantity dot patterns, vernacular counting terms, and mental arithmetic flash drills.
+  - *EVS Decks*: Local biodiversity, sacred trees (Sal, Mahua), festive calendars, and village community implements.
+- **Card Flip & Audio Interaction**: Tap to reveal 3D flip card back with Devanagari transliteration, English meaning, and audio pronunciation.
+- **Shuffle & Continuous Review**: Automatically cycles through subject decks with adjustable slide delays for classroom choral recitation.
 
 ---
 
